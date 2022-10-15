@@ -30,12 +30,12 @@ simplyCountdown('#cuenta', {
 
 const sectionClass = document.getElementsByClassName('simply-section')
 for(let x of sectionClass) {
-    x.classList.add('border', 'border-dorado', 'p-2', 'min-w-50px', 'min-h-50px', 'rounded-lg', 'bg-back')
-    x.firstChild.classList.add('flex', 'flex-col', 'justify-center', 'items-center', 'p-2')
+    x.classList.add('border-2', 'border-dorado', 'min-w-50px', 'min-h-50px', 'rounded-lg', 'bg-back', 'w-12', 'h-12')
+    x.firstChild.classList.add('flex', 'flex-col', 'items-center')
 }
 
-const amountClass = document.getElementsByClassName('simply-word')
-for(let x of amountClass) {
+const wordClass = document.getElementsByClassName('simply-word')
+for(let x of wordClass) {
     x.classList.add('text-sm')
 }
 

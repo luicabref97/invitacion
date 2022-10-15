@@ -30,6 +30,7 @@ module.exports = {
         '18': '72px',
         '19': '76px',
         '340px': '340px',
+        '400px': '400px',
         '490px': '490px',
         'inherit': 'inherit',
       },
@@ -57,6 +58,7 @@ module.exports = {
         '36': '144px',
         '40px': '40px',
         '50px': '50px',
+        '450px': '450px',
       },
       maxWidth: {
         '35.5': '142px',
@@ -95,6 +97,9 @@ module.exports = {
         '17': '68px',
         '18': '72px',
         '19': '76px',
+      },
+      backgroundImage: {
+        'pattern': "url('/images/Group23.png')",
       },
     },
   },
