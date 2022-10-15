@@ -99,7 +99,7 @@ module.exports = {
         '19': '76px',
       },
       backgroundImage: {
-        'pattern': "url('/images/Group23.png')",
+        'pattern': "url('https://i.ibb.co/vH1TrPx/Group23.png')",
       },
     },
   },
