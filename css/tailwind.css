@@ -610,6 +610,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -799,10 +803,6 @@ video {
   background-repeat: repeat;
 }
 
-.bg-repeat-y{
-  background-repeat: repeat-y;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -888,6 +888,11 @@ video {
 
 .font-fontPrincipal{
   font-family: tangerine, handwriting;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-sm{
