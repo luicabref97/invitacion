@@ -8,11 +8,36 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-    <h1>Asistencia</h1>
-    <a href="./index.html">Volver</a>
+<body class="font-fontText w-80 m-auto">
+    <a class="underline text-dorado" href="./index.html"> Volver a la invitación</a>
+    <div class="border border-gray-400 flex flex-col gap-3 p-4 m-auto w-80 mt-6 mb-4 rounded-lg">
+        <h1>Boda Luis y Paula</h1>
+        <span class="border border-gray-200"></span>
+        <div>
+            <p>18 de nov de 2022 14:00</p>
+            <p>Leiva 4069, CABA</p>
+        </div>
+    </div>    
+    <h1 class="mb-4 font-bold">Confirmanos tu asistencia</h1>
+    <form id="form" action="https://formspree.io/f/maykbgvg" method="POST">
+        <div class="flex flex-col gap-1 mb-4">
+            <label for="name">*Nombre</label>
+            <input class="rounded-lg border border-gray-400 p-2" name="name" type="text" required id="name" placeholder="Escribe tu nombre">
+        </div>
+        <div class="flex gap-2">
+            <input type="radio" id="asiste" name="asistencia" value="Asistire" required class="w-5 h-5 text-dorado focus:ring-dorado cursor-pointer">
+            <label class="mr-2" for="asiste">Asistiré</label>
+            <input type="radio" id="noAsiste" name="asistencia" value="No asistire" class="w-5 h-5 text-dorado focus:ring-dorado cursor-pointer">
+            <label for="noAsiste">No asistiré</label>
+        </div>
+        <button class="mt-4 mb-4 bg-beige w-full p-2 rounded-lg text-white active:border-2 active:border-dorado font-bold" type="submit">Enviar</button>
+    </form>
+    <div class="text-center">© 2022 by Luis Cabrera</div>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="./form.js"></script>
 </body>
 </html>
