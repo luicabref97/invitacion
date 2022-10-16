@@ -4,19 +4,14 @@ const checkNoAsistire = document.getElementById('noAsiste')
 const nota = document.getElementById('nota')
 
 asist.addEventListener('click', e => {
-    if(checkAsistire.checked) {
+    if(checkAsistire.checked === true) {
         nota.innerHTML = 'Nota: Si tienes hijos, con tu confirmacion de asistencia estarás confirmando la de ellos'
-    } else if(checkNoAsistire.checked) {
+    } else if(checkNoAsistire.checked === true) {
         nota.innerHTML = ''
     } else {
         nota.innerHTML = ''
     }
 })
-    
-
-// if (checkAsistire.change) {
-//     console.log('Si tienes hijos, con tu confirmacion de asistencia estarás confirmando la de ellos')
-// }
 
 const $form = document.querySelector('#form')
 
@@ -33,8 +28,22 @@ async function handleSubmit(event) {
         }
     })
     if (response.ok) {
+        if(checkAsistire.checked === true) {
+            swal({
+                title: "Gracias",
+                text: "Te esperamos!",
+                icon: "success",
+                button: true,
+            });
+        } else {
+            swal({
+                title: "Lo sentimos",
+                text: "Sabemos que celebras con nosotros a la distancia",
+                icon: "warning",
+                button: true,
+            });
+        }
         this.reset()
-        alert('Gracias por completar el formulario')
     }
 }
 

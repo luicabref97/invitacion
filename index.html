@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boda Luis y Pau</title>
     <link rel="shortcut icon" href="#">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/tailwind.css">
@@ -19,8 +20,8 @@
         </picture>
         <div class="absolute flex flex-col justify-center items-center z-10 text-stone-700 ml-4 border-b-dorado border-b-2 rounded-full pb-3 pt-6 border-t-dorado border-t-2">
             <h1 class="font-fontText text-lg pb-5 text-center pl-3 mr-3">¡Nos casamos!</h1>
-            <h2 class="font-fontPrincipal text-5xl text-center flex flex-col justify-center items-center pb-5"><span class="tracking-widest">Luis</span> <span>&</span> <span class="tracking-widest">Paula</span></h2>
-            <picture><img src="images/Group 22.svg" alt=""></picture>
+            <h2 class="font-fontPrincipal text-5xl text-center flex flex-col justify-center items-center pb-5 animate__animated animate__zoomInUp animate__slow"><span class="tracking-widest">Luis</span> <span>&</span> <span class="tracking-widest">Paula</span></h2>
+            <picture class="animate__animated animate__heartBeat"><img src="images/Group 22.svg" alt=""></picture>
         </div>
     </div>
     <div class="font-fontText text-lg text-center py-5 px-3 text-stone-800">Y deseamos compartir este gran día contigo</div>
@@ -35,7 +36,7 @@
         <img src="./images/image26.png" alt="">
     </picture>
     <div class="bg-pattern bg-repeat text-center flex flex-col justify-center items-center -mt-16">
-        <h2 class="font-fontPrincipal text-6xl pt-6 pb-6 max-w-340px text-center text-stone-700">Brindis</h2>
+        <h2 class="font-fontPrincipal text-6xl pt-6 pb-6 max-w-340px text-center text-stone-700" data-aos="zoom-in">Brindis</h2>
         <picture class="pb-7">
             <img src="images/brindis.svg" alt="">
         </picture>
@@ -60,22 +61,22 @@
     </div>
     <div class="flex justify-center items-center mt-6 mb-6">
         <img class="absolute" src="./images/image27.png" alt="#">
-        <iframe class="border-dorado border-2 z-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5618868186743!2d-58.450374782556146!3d-34.5899506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f11bd67163%3A0xe79ac721dc76c496!2sLeiva%204069%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665856880557!5m2!1ses-419!2sar" width="280" height="250" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="border-dorado border-2 z-10" data-aos="zoom-in" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5618868186743!2d-58.450374782556146!3d-34.5899506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f11bd67163%3A0xe79ac721dc76c496!2sLeiva%204069%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665856880557!5m2!1ses-419!2sar" width="280" height="250" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="bg-pattern bg-repeat flex flex-col items-center justify-center pt-12 pb-6">
-        <h2 class="font-fontPrincipal text-6xl max-w-450px text-center text-stone-700">Lista de regalos</h2>
+        <h2 class="font-fontPrincipal text-6xl max-w-450px text-center text-stone-700" data-aos="zoom-in">Lista de regalos</h2>
         <div class="flex flex-col items-center gap-4 bg-back px-10 py-5 w-400px">
             <picture>
                 <img src="./images/regalo.svg" alt="#">
             </picture>
             <p class="font-fontText text-center">Nuestro mejor regalo es tu presencia,<br> pero si deseas colaborar con nuestra</p>
-            <h3 class="font-fontPrincipal text-4xl max-w-450px text-center text-stone-700">Luna de Miel</h3>
+            <h3 class="font-fontPrincipal text-4xl max-w-450px text-center text-stone-700" data-aos="zoom-in">Luna de Miel</h3>
             <p class="font-fontText text-center">Puedes hacernos tu presente de manera presencial ó en la siguiente cuenta: <br>CBU: XXXXXXXXXXXXXXXXXXXX <br>Alias: BodaLuisyPau</p>
         </div>
         <picture>
             <img src="./images/flor.png" alt="#">
         </picture>
-        <h2 class="font-fontPrincipal text-6xl max-w-450px text-center text-stone-700">Etiquetá tus fotos</h2>
+        <h2 class="font-fontPrincipal text-6xl max-w-450px text-center text-stone-700" data-aos="zoom-in">Etiquetá tus fotos</h2>
         <picture class="py-3">
             <img src="./images/instagram.svg" alt="#">
         </picture>
@@ -89,6 +90,10 @@
         </picture>
         <p class="font-fontText">© 2022 by Luis Cabrera</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./simplyCountdown.min.js"></script>
